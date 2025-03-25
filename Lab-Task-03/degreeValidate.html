@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Degree Validation</title>
+</head>
+<body>
+
+    <h2>Degree</h2>
+    <form action="home.html" onsubmit="return validateCheckboxes()">
+
+        <input type="checkbox" id="ssc" name="ssc" value="ssc">
+        <label for="checkbox1">SSC</label>
+
+        <input type="checkbox" id="hsc" name="hsc" value="hsc">
+        <label for="checkbox2">HSC</label>
+
+        <input type="checkbox" id="bsc" name="bsc" value="bsc">
+        <label for="checkbox3">BSC</label>
+
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="eMsg"></p>
+
+    <script>
+        function validateCheckboxes() {
+            let checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            let errorMessage = document.getElementById("eMsg");
+            errorMessage.innerHTML = "";
+
+            let isChecked = false;
+            checkboxes.forEach(function(checkbox) {
+                if (checkbox.checked) {
+                    isChecked = true;
+                }
+            });
+
+            if (!isChecked) {
+                errorMessage.innerHTML = "Have to select at least one option.";
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+
+</body>
+</html>
