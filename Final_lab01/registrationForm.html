@@ -1,0 +1,90 @@
+<!DOCTYPE>
+<html>
+    <title>Registration Form</title>
+    <body>
+        <form action="registrationForm.php" method="POST">
+            <table style="font-size: 20px;">
+                <tr>
+                    <th colspan="2">Registration</th>
+                </tr>
+                <tr>
+                    <td><label for="fn">First Name</label></td>
+                    <td><input id="fn" type = "text" name = "fname"></td>
+                </tr>
+                <tr>
+                    <td><label for="ln">Last Name</label></td>
+                    <td><input id="ln" type = "text" name = "lname"></td>
+                </tr>
+                <tr>
+                    <td><label for="em">E-mail</label></td>
+                    <td><input id="em" type = "text" name = "email"></td>
+                </tr>
+                <tr>
+                    <td><label for="pass">Password</label></td>
+                    <td><input id="pass" type = "password" name = "pass"></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth</label></td>
+                    <td><input id="dob" type = "date" name = "dob"></td>
+                </tr>
+                <tr>
+                    <td><label for="phn">Phone Number</label></td>
+                    <td><input id="phn" type = "text" name = "phn"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td>
+                        <input type = "radio" id = "male" name = "gender" value = "Male">
+                        <label for="male">Male</label>
+                        <input type = "radio" id = "female" name = "gender" value="Female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="dept">Department</label></td>
+                    <td>
+                        <select name="dept">
+                            <option value="cse">CSE</option>
+                            <option value="eee">EEE</option>
+                            <option value="bba">BBA</option>
+                            <option value="archi">Architechture</option>
+                            <option value="english">English</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="hobbies">Hobbies</label></td>
+                    <td>
+                        <label for="tra">Travelling</label>
+                        <input type="checkbox" name="hobbies" id="tra" value="travel">
+                        <label for="gar">Gardenning</label>
+                        <input type="checkbox" name="hobbies" id="gar" value="garder">
+                        <label for="paint">Painting</label>
+                        <input type="checkbox" name="hobbies" id="paint" value="painting">
+                        <label for="cook">Cooking</label>
+                        <input type="checkbox" name="hobbies" id="cook" value="cooking">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="skills">Skill</label></td>
+                    <td>
+                        <label for="html">HTML</label>
+                        <input type="checkbox" name="skills" id="html" value="html">
+                        <label for="js">JavaScript</label>
+                        <input type="checkbox" name="skills" id="js" value="js">
+                        <label for="php">PHP</label>
+                        <input type="checkbox" name="skills" id="php" value="php">
+                        <label for="py">Python</label>
+                        <input type="checkbox" name="skills" id="py" value="py">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="reset"></td>
+                    <td>
+                        <input type="submit">
+                </tr>
+            </table>
+
+        </form>
+    </body>
+</html>
